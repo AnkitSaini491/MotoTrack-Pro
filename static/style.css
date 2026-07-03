@@ -1,1 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+.logo i{
+    margin-right:8px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:#0284c7;
+}
+
+/* Search */
+
+.search{
+    text-align:center;
+    margin:40px;
+}
+
+.search input{
+    width:60%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+}
+
+/* Features */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:60px 8%;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:45px;
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+/* Brands */
+
+.brands{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.brands h2{
+    margin-bottom:30px;
+}
+
+.brand-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.brand-list span{
+    background:#38bdf8;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:60px;
+    background:#111827;
+    padding:25px;
+    text-align:center;
+}
+
+footer h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.search input{
+    width:90%;
+}
+
+}
