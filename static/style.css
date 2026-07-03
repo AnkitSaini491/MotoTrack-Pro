@@ -218,3 +218,31 @@ table td{
     background:#0284c7;
 }
 
+.compare{
+    padding:60px 8%;
+    overflow-x:auto;
+}
+
+.compare table{
+    width:100%;
+    border-collapse:collapse;
+    background:#1e293b;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.compare th{
+    background:#38bdf8;
+    color:white;
+    padding:18px;
+}
+
+.compare td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #334155;
+}
+
+.compare tr:hover{
+    background:#273549;
+}
