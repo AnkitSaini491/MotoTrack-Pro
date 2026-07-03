@@ -276,3 +276,33 @@ form button:hover{
 background:#0284c7;
 
 }
+.card{
+
+transition:.3s;
+}
+
+.card button{
+
+margin-top:15px;
+
+width:100%;
+
+padding:12px;
+
+background:#38bdf8;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+.card button:hover{
+
+background:#0284c7;
+
+}
