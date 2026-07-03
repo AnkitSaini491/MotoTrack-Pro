@@ -194,3 +194,27 @@ nav ul{
 }
 
 }
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table td{
+    padding:12px;
+    border-bottom:1px solid #334155;
+}
+
+.card button{
+    padding:12px 25px;
+    border:none;
+    background:#38bdf8;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.card button:hover{
+    background:#0284c7;
+}
+
