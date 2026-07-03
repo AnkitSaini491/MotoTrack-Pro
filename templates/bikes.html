@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Bikes | MotoTrack</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-motorcycle"></i>
+            MotoTrack
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/bikes">Bikes</a></li>
+            <li><a href="/compare">Compare</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <h1>Explore Bikes</h1>
+
+        <p>Find specifications, mileage, engine details and prices.</p>
+
+    </section>
+
+    <!-- Bike Cards -->
+
+    <section class="features">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=500"
+                width="100%" height="180">
+
+            <h2>Royal Enfield Classic 350</h2>
+
+            <p>349cc • 35 km/l • ₹1.95 Lakh</p>
+
+            <a href="/bike">
+                <button>View Details</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1517846693594-1567da72af75?w=500"
+                width="100%" height="180">
+
+            <h2>KTM Duke 390</h2>
+
+            <p>399cc • 30 km/l • ₹3.10 Lakh</p>
+
+            <a href="/bike">
+                <button>View Details</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=500"
+                width="100%" height="180">
+
+            <h2>Yamaha R15 V4</h2>
+
+            <p>155cc • 45 km/l • ₹1.85 Lakh</p>
+
+            <a href="/bike">
+                <button>View Details</button>
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500"
+                width="100%" height="180">
+
+            <h2>TVS Apache RTR 160</h2>
+
+            <p>160cc • 47 km/l • ₹1.25 Lakh</p>
+
+            <a href="/bike">
+                <button>View Details</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h3>ANKIT SAINI</h3>
+
+        <p>© 2025 MotoTrack. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
