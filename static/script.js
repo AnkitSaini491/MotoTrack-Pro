@@ -1,72 +1,29 @@
-// ===== Live Search =====
+const search = document.getElementById("searchBike");
 
-const searchInput = document.querySelector(".search input");
+if(search){
 
-if (searchInput) {
+search.addEventListener("keyup",()=>{
 
-    searchInput.addEventListener("keyup", function () {
+let value=search.value.toLowerCase();
 
-        const value = this.value.toLowerCase();
+let cards=document.querySelectorAll(".card");
 
-        const brands = document.querySelectorAll(".brand-list span");
+cards.forEach(card=>{
 
-        brands.forEach((brand) => {
+let bike=card.querySelector("h2").textContent.toLowerCase();
 
-            if (brand.textContent.toLowerCase().includes(value)) {
-                brand.style.display = "inline-block";
-            } else {
-                brand.style.display = "none";
-            }
+if(bike.includes(value)){
 
-        });
+card.style.display="block";
 
-    });
+}else{
+
+card.style.display="none";
 
 }
-
-
-// ===== Explore Button Animation =====
-
-const btn = document.querySelector(".hero button");
-
-if (btn) {
-
-    btn.addEventListener("mouseover", () => {
-
-        btn.style.transform = "scale(1.08)";
-
-    });
-
-    btn.addEventListener("mouseout", () => {
-
-        btn.style.transform = "scale(1)";
-
-    });
-
-}
-
-
-// ===== Feature Card Animation =====
-
-const cards = document.querySelectorAll(".card");
-
-cards.forEach((card) => {
-
-    card.addEventListener("mouseenter", () => {
-
-        card.style.boxShadow = "0 0 20px #38bdf8";
-
-    });
-
-    card.addEventListener("mouseleave", () => {
-
-        card.style.boxShadow = "none";
-
-    });
 
 });
 
+});
 
-// ===== Welcome Message =====
-
-console.log("Welcome to MotoTrack 🚀");
+}
