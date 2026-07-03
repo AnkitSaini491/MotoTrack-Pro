@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoTrack | Bike Information Tracker</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-motorcycle"></i>
+            MotoTrack
+        </div>
+
+        <ul>
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/bikes">Bikes</a></li>
+
+            <li><a href="/compare">Compare</a></li>
+
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h1>Find Your Dream Bike</h1>
+
+        <p>
+            Compare bikes, check specifications, mileage,
+            engine details and latest prices.
+        </p>
+
+        <a href="/bikes">
+            <button>Explore Bikes</button>
+        </a>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search">
+
+        <input type="text"
+            placeholder="Search Bike...">
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+
+        <div class="card">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <h2>Search Bikes</h2>
+
+            <p>Search bikes by name and brand.</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-scale-balanced"></i>
+
+            <h2>Compare</h2>
+
+            <p>Compare two bikes instantly.</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-gauge-high"></i>
+
+            <h2>Specifications</h2>
+
+            <p>View mileage, engine and top speed.</p>
+
+        </div>
+
+    </section>
+
+    <!-- Popular Brands -->
+
+    <section class="brands">
+
+        <h2>Popular Brands</h2>
+
+        <div class="brand-list">
+
+            <span>Royal Enfield</span>
+            <span>Yamaha</span>
+            <span>Honda</span>
+            <span>KTM</span>
+            <span>TVS</span>
+            <span>Bajaj</span>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>ANKIT SAINI</h3>
+
+        <p>© 2025 MotoTrack. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
